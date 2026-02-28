@@ -84,7 +84,7 @@ return {
     "akinsho/toggleterm.nvim",
     version = "*",
     opts = {
-      open_mapping = [[<C-`>]],
+      open_mapping = [[<C-t>]],
       direction = "horizontal",
       size = 15,
     },
@@ -95,5 +95,12 @@ return {
   "airblade/vim-gitgutter",
 
   -- Status bar
-  { "nvim-lualine/lualine.nvim", config = true },
+{
+  "nvim-lualine/lualine.nvim",
+  opts = {
+    options = {
+      globalstatus = true,
+    },
+  },
+},
 }
